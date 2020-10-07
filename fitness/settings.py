@@ -23,9 +23,9 @@ TEMPLATES_DIR = os.path.join(BASE_DIR,'port/templates')
 SECRET_KEY = 'q+#fo9p4e(-*d%6w5^i4-9+f90oxc)jdp7fumjl&-shdxxd^ak'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['sahirufitness.herokuapp.com', '127.0.0.1']
 
 
 # Application definition

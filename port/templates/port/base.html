@@ -1,0 +1,186 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Sahiru Fitness</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+    <!-- Bootstrap -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
+  </head>
+  <body>
+    <header>
+      <a href='#sec'> <img class="logo" src="{% static 'images/logo.png' %}" alt=""> </a>
+      <div class="toggle" onclick="toggle()">
+        <img src="{% static 'images/toggle.png' %}" alt="">
+      </div>
+    </header>
+    <section class="one" id="sec">
+      <div class="banner">
+        <video src="{% static 'videos/bg.mp4' %}" autoplay muted loop type="mp4"></video>
+        <div class="textbox">
+          <h2>THERE IS NO CHANGE
+              <br>WHERE <br>
+              THERE IS NO ACTION</h2>
+
+          <p>Updated for 2020, the new 90 Day Plan gives you the tools to transform your body and get you fitter, stronger, healthier and happy. 180+ incredible exercises, 15 new and exclusive real-time workouts with sahiru, online support for our team of support coaches, and access to our official Facebook community group.</p>
+        </div>
+        <div class="imgBox">
+          <img src="{% static 'images/man.png' %}" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="two" id="two">
+      <div class="container">
+        <div class="card">
+          <div class="imgBx">
+            <img src="{% static 'images/grp.jpeg' %}" alt="">
+          </div>
+          <div class="contentBx">
+            <div class="content">
+              <h2>GROUP TRAINING</h2>
+              <p>We conduct 1-hour group workout session to help everyone in learning the foundation movements and master them. All membership includes sessions on nutrition to help you to achieve your fitness target.
+                <br>  Benefits – <br>
+                  •	Be a part of a community.<br>
+                  •	Add variety to your workout.<br>
+                  •	Hold yourself accountable.<br>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgBx">
+            <img src="{% static 'images/cross.jpeg' %}" alt="">
+          </div>
+          <div class="contentBx">
+            <div class="content">
+              <h2>CROSS FIT</h2>
+              <p>Cross fit is a lifestyle characterized by safe, effective exercise and sound nutrition. Cross fit is safe, effective and efficient movement similar to those you use everyday in life.
+Cross fit is a high intensity workout ,in which we can individually adjust the level of challenges and hence can safely improve the fitness.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgBx">
+            <img src="{% static 'images/b.jpeg' %}" alt="">
+          </div>
+          <div class="contentBx">
+            <div class="content">
+              <h2>PERSONAL TRAINING</h2>
+              <p>I also provide presonal training for people who are looking to make their lifestyle healthier as i personally focus on maintaining body posture for the exercises not on the weight. Maintaining good body posture is most important thing in the workout as it helps in building muscles and avoiding injuries. This is something that can be easily achieved with personal training.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgBx">
+            <img src="{% static 'images/c.jpeg' %}" alt="">
+          </div>
+          <div class="contentBx">
+            <div class="content">
+              <h2>6 WEEK TRANSFORMATION</h2>
+              <p>When you put your faith in the process and do this consistently, you fundamentaly change your life, not just for short periods of time, but permanently. It is possible to get hard transformation in just 6 weeks.
+Since most people just focus on weight lifting which helps in building strength but not much effective in losing weight.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="three" id="three">
+      <div class="cont">
+        <h2>Hello World, <br>I'm <span>Sahil Saini</span></h2>
+        <br>
+        <p>I am a fitness freak and a motivator. Passionate about health, nutrition, fitness and wellbeing, personal training was a natural career path for me. Today, I am an HARYANA based personal trainer, who also provide online training sessions and an nutritional consultant, offering both one to one personal training and online tailored nutrition and training programmes for fat loss, muscle gain and improved performance.</p>
+      </div>
+    </section>
+    <section id="contact-btn">
+    <!--heading-------------->
+    <h1 class="c-b-heading">Give me your 90 days, I'll give you Base of your DREAM PHYSIQUE!!</h1>
+    <!--btn-------->
+      <button><a href="mailto:sahirufitnessclub@gmail.com">Contact Me</a></button>
+    </section>
+    <section class="four" id="four">
+      <div class="contain">
+        <div class="contactinfo">
+          <div>
+            <h2>Contact Info</h2>
+            <ul class="info">
+              <li>
+                <span><img src="{% static 'images/location.png' %}" alt=""></span>
+                <span>4 marla Sonipat <br>
+                  Haryana, India <br> 131001
+                </span>
+              </li>
+              <li>
+                <span><img src="{% static 'images/mail.png' %}" alt=""></span>
+                <span>sahirufitnessclub@gmail.com</span>
+              </li>
+              <li>
+                <span><img src="{% static 'images/call.png' %}" alt=""></span>
+                <span>+91-7404333030</span>
+              </li>
+            </ul>
+          </div>
+          <ul class="sci">
+            <li><a href="https://www.facebook.com/sahil.saini11"><img src="{% static 'images/facebook.png' %}" alt=""></a></li>
+            <li><a href="https://www.snapchat.com/add/sahiru_r"><img src="{% static 'images/s.png' %}" alt=""></a></li>
+            <li><a href="https://www.instagram.com/sahirufitness/"><img src="{% static 'images/Insta.png' %}" alt=""></a></li>
+            <li><a href="https://www.snapchat.com/add/sahiru_r"><img src="{% static 'images/twitter.png' %}" alt=""></a></li>
+          </ul>
+        </div>
+        <div class="contactform">
+          <h2>Send a Message</h2>
+          <div class="formBox">
+            <div class="inputBox w50">
+              <input type="text" name="" required>
+              <span>First Name</span>
+            </div>
+            <div class="inputBox w50">
+              <input type="text" name="" required>
+              <span>Last Name</span>
+            </div>
+            <div class="inputBox w50">
+              <input type="text" name="" required>
+              <span>Email</span>
+            </div>
+            <div class="inputBox w50">
+              <input type="text" name="" required>
+              <span>Mobile no.</span>
+            </div>
+            <div class="inputBox w100">
+              <textarea name="name" required></textarea>
+              <span>Write your message here...</span>
+            </div>
+            <div class="inputBox w50">
+              <input type="submit" value="Send" required>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="navigation">
+      <ul>
+        <li><a href="#sec" onclick="toggle()">Home</a></li>
+        <br>
+        <li><a href="#two" onclick="toggle()">Methods</a></li>
+        <br>
+        <li><a href="#three" onclick="toggle()">About</a></li>
+        <br>
+        <li><a href="#four" onclick="toggle()">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <script type="text/javascript" src="{% static 'js/base.js' %}"></script>
+    <footer class="text-muted">
+      <div class="center">
+        <p>© Copyright Jatin Saini {% now "Y" %}</p>
+      </div>
+    </footer>
+
+  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</html>

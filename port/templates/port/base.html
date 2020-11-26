@@ -102,63 +102,32 @@ Since most people just focus on weight lifting which helps in building strength 
       <button><a href="mailto:sahirufitnessclub@gmail.com">Contact Me</a></button>
     </section>
     <section class="four" id="four">
-      <div class="contain">
-        <div class="contactinfo">
-          <div>
-            <h2>Contact Info</h2>
-            <ul class="info">
-              <li>
-                <span><img src="{% static 'images/location.png' %}" alt=""></span>
-                <span>4 marla Sonipat <br>
-                  Haryana, India <br> 131001
-                </span>
-              </li>
-              <li>
-                <span><img src="{% static 'images/mail.png' %}" alt=""></span>
-                <span>sahirufitnessclub@gmail.com</span>
-              </li>
-              <li>
-                <span><img src="{% static 'images/call.png' %}" alt=""></span>
-                <span>+91-7404333030</span>
-              </li>
-            </ul>
+      <form>
+        <!--left--------------------------------------->
+          <div class="contact-left">
+             <h1 class="c-l-heading"><font style="border-bottom: 3px solid #c33d68;">Writ</font>e us</h1>
+          <!--name-------->
+             <div class="f-name">
+                <font >Name</font>
+                <input type="text" placeholder="Full Name"/>
+             </div>
+          <!--email-------->
+             <div class="f-email">
+                <font >Email</font>
+                <input type="email" placeholder="Example@gmail.com"/>
+             </div>
           </div>
-          <ul class="sci">
-            <li><a href="https://www.facebook.com/sahil.saini11"><img src="{% static 'images/facebook.png' %}" alt=""></a></li>
-            <li><a href="https://www.snapchat.com/add/sahiru_r"><img src="{% static 'images/s.png' %}" alt=""></a></li>
-            <li><a href="https://www.instagram.com/sahirufitness/"><img src="{% static 'images/Insta.png' %}" alt=""></a></li>
-            <li><a href="https://twitter.com/sahiruroger?s=08"><img src="{% static 'images/twitter.png' %}" alt=""></a></li>
-          </ul>
-        </div>
-        <div class="contactform">
-          <h2>Send a Message</h2>
-          <div class="formBox">
-            <div class="inputBox w50">
-              <input type="text" name="" required>
-              <span>First Name</span>
-            </div>
-            <div class="inputBox w50">
-              <input type="text" name="" required>
-              <span>Last Name</span>
-            </div>
-            <div class="inputBox w50">
-              <input type="text" name="" required>
-              <span>Email</span>
-            </div>
-            <div class="inputBox w50">
-              <input type="text" name="" required>
-              <span>Mobile no.</span>
-            </div>
-            <div class="inputBox w100">
-              <textarea name="name" required></textarea>
-              <span>Write your message here...</span>
-            </div>
-            <div class="inputBox w50">
-              <input type="submit" value="Send" required>
-            </div>
+          <!--right------------------------------------------->
+          <div class="contact-right">
+          <!--message-------->
+             <div class="message">
+                <font >Message</font>
+               <textarea name="message" rows="5" cols="20" placeholder="Write Message..."></textarea>
+             </div>
+          <!--submit-btn------------>
+             <button>submit</button>
           </div>
-        </div>
-      </div>
+        </form>
     </section>
     <div id="navigation">
       <ul>

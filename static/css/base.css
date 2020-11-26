@@ -270,184 +270,130 @@ header .toggle img {
 }
 
 
-.four {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: #111;
+#four{
+	width: 100%;
+	height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  background: #d1d0ce;
+
 }
-.four::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  background: #fff;
+#four form{
+	display: flex;
+	width: 80%;
+	height: 80vh;
+	background-color: #1A1A1A;
+	box-shadow: 2px 12px 20px rgba(0,0,0,0.2);
+	border: 1px solid rgba(255,255,255,0.01)
 }
-.four .contain {
-  position: relative;
-  min-width: 1100px;
-  min-height: 550px;
-  display: flex;
-  z-index: 1000;
+
+.contact-left{
+	width: 40%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
-.four .contain .contactinfo {
-  position: absolute;
-  top: 40px;
-  width: 350px;
-  height: calc(100% - 80px);
-  background: #111;
-  z-index: 1;
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+.contact-right{
+	width: 60%;
+	height: 100%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-left: 1px solid rgba(255,255,255,0.08);
 }
-.four .contain .contactinfo h2 {
-  color: #fff;
-  font-size: 1.5em;
-  font-weight: 500;
+.contact-right button{
+	width: 100%;
+	height: 50px;
+	background-color: #BFBFBF;
+	font-weight: bold;
+	outline: none;
+	border: none;
+	margin: 0px;
+	color:#1B1B1B;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
 }
-.four .contain .contactinfo .info {
-  position: relative;
-  margin: 20px 0;
+.contact-right button:hover {
+  background-color: #c33d68;
 }
-.four .contain .contactinfo .info li {
-  position: relative;
-  list-style: none;
-  display: flex;
-  margin: 20px 0;
-  cursor: pointer;
-  align-items: flex-start;
+.c-l-heading{
+	font-family: calibri;
+	color:#FFFFFF;
+	font-size: 3rem;
+	letter-spacing: 2px;
+	font-weight: 400;
+
 }
-.four .contain .contactinfo .info li span:nth-child(1) {
-  width: 30px;
-  min-width: 30px;
+.f-name,.f-email{
+	display: flex;
+	flex-direction: column;
+	font-family: calibri;
+
 }
-.four .contain .contactinfo .info li span:nth-child(1) img {
-  max-width: 100%;
-  filter: invert(1);
-  opacity: 0.5;
+.f-name font,.f-email font{
+	color:#BFBFBF;
+	font-size: 22px;
 }
-.four .contain .contactinfo .info li span:nth-child(2) {
-  color: #fff;
-  margin-left: 10px;
-  font-weight: 300;
-  opacity: 0.5
+.f-name input,.f-email input{
+	height: 30px;
+	width:250px;
+	border: none;
+	outline: none;
+	background-color:transparent;
+	border-bottom: 1px solid #929292;
+	color:#FFFFFF;
+	margin: 10px 0px;
 }
-.four .contain .contactinfo .info li:hover span:nth-child(1) img,
-.four .contain .contactinfo .info li:hover span:nth-child(2) {
-  opacity: 1;
+.f-email input::placeholder,
+.f-name input::placeholder{
+	opacity: 0.5;
+	letter-spacing: 1px;
+}
+.f-email input:focus,
+.f-name input:focus{
+	border-bottom: 1px solid #17d1ac;
+	transition: all ease 0.5s;
+}.message font{
+	font-size: 18px;
+	color:#4E4E4E;
+	font-family: calibri;
+
+}
+.message{
+	margin: 20px;
+}
+.contact-right textarea{
+	width: 100% !important;
+	height: 320px !important;
+	border: none;
+	outline: none;
+	background-color:transparent;
+	box-sizing: border-box;
+	color:#EBEBEB;
+	font-size: 16px;
+}
+.contact-right textarea::placeholder{
+	color:#EBEBEB;
+	font-size: 18px;
+	letter-spacing: 2px;
+	font-family: calibri;
+}
+.contact-right button:active{
+	transform: scale(1.04);
+	transition: all ease 0.1s;
 }
 
 
-.four .contain .contactinfo .sci {
-  position: relative;
-  display: flex;
-}
-.four .contain .contactinfo .sci li {
-  list-style: none;
-  margin-right: 45px;
-}
-.four .contain .contactinfo .sci li a {
-  text-decoration: none;
-}
-.four .contain .contactinfo .sci li a img {
-  filter: invert(1);
-  height: 30px;
-  opacity: 0.5;
-}
-.four .contain .contactinfo .sci li:hover a img {
-  opacity: 1
-}
-.four .contain .contactform {
-  position: absolute;
-  padding: 70px 50px;
-  background: #d1d0ce;
-  margin-left: 150px;
-  padding-left: 250px;
-  width: calc(100% - 150px);
-  height: 100%;
-  box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
-}
-.four .contain .contactform h2 {
-  color: #0f3959;
-  font-size: 1.5em;
-  font-weight: 500;
-}
-.four .contain .contactform .formBox {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding-top: 30px;
-}
-.four .contain .contactform .formBox .inputBox {
-  position: relative;
-  margin: 0 0 35px 0;
-}
-.four .contain .contactform .formBox .inputBox.w50 {
-  width: 47%;
-}
-.four .contain .contactform .formBox .inputBox.w100 {
-  width: 100%;
-}
-.four .contain .contactform .formBox .inputBox textarea,
-.four .contain .contactform .formBox .inputBox input {
-  width: 100% !important;
-  resize: none;
-  padding: 5px 0;
-  font-size: 1.2em;
-  font-weight: 300;
-  color: #333;
-  border: none;
-  border-bottom: 1px solid #777;
-  outline: none;
-  background: #d1d0ce;
-}
-.four .contain .contactform .formBox .inputBox textarea {
-  min-height: 120px;
-  background: #d1d0ce;
-}
-.four .contain .contactform .formBox .inputBox span {
-  position: absolute;
-  left: 0;
-  font-size: 1.2em;
-  font-weight: 300;
-  color: #333;
-  transition: 0.5s;
-}
-.four .contain .contactform .formBox .inputBox textarea:focus ~ span,
-.four .contain .contactform .formBox .inputBox input:focus ~ span,
-.four .contain .contactform .formBox .inputBox textarea:valid ~ span,
-.four .contain .contactform .formBox .inputBox input:valid ~ span {
-  transform: translateY(-20px);
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 1px;
-  color: #c33d68;
-}
-.four .contain .contactform .formBox .inputBox input[type='submit'] {
-  position: relative;
-  cursor: pointer;
-  background: #111;
-  color: #fff;
-  border: none;
-  max-width: 150px;
-  padding: 12px;
-}
-.four .contain .contactform .formBox .inputBox input[type='submit']:hover {
-  background: #c33d68;
-}
 
 
 .center p {
   text-align: center;
-  background: #d1d0ce;
+  background: #1A1A1A;
+  color: #fff;
   height: 50px;
   padding-top: 15px;
 }
@@ -586,23 +532,6 @@ header .toggle img {
     right: 0px;
     padding: 30px;
   }
-  .contain {
-    position: relative;
-    flex-direction: column;
-    max-width: 350px;
-    margin: 50px 50px;
-  }
-  .contain .contactinfo {
-    width: 100%;
-    height: 250px;
-    left: 0;
-  }
-  .contain .contactform {
-    width: 100%;
-    height: auto;
-    right: 0;
-    padding: 30px;
-  }
   .cont h2 {
     color: #111;
     font-size: 2em;
@@ -613,4 +542,48 @@ header .toggle img {
   .banner .textbox p {
     margin: 25px 0 25px;
   }
+  #four{
+		padding: 20px;
+		height: auto;
+		box-sizing: border-box;
+	}
+
+
+	#four form {
+		flex-direction: column;
+		height:auto;
+		padding: 20px;
+		width:90% !important;
+
+	}
+	.contact-left,.contact-right{
+		width:100%;
+		border: none;
+	}
+	.f-name,.f-email{
+		width: 100%;
+
+	}
+	.f-name input,.f-email input{
+		width:100%;
+		border: none;
+		background-color: #262626 !important;
+		padding: 10px;
+		box-sizing: border-box;
+		height: 40px;
+
+	}
+	textarea{
+		background-color: #262626 !important;
+		margin: 10px 0px;
+		padding: 10px;
+		height: 200px !important;
+		width:100% !important;
+	}
+	.message{
+		margin:0px;
+	}
+	#four form h1{
+		margin:5px 0px;
+	}
 }

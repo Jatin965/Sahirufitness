@@ -281,8 +281,8 @@ header .toggle img {
 }
 #four form{
 	display: flex;
-	width: 80%;
-	height: 80vh;
+	width: 70%;
+	height: 60vh;
 	background-color: #1A1A1A;
 	box-shadow: 2px 12px 20px rgba(0,0,0,0.2);
 	border: 1px solid rgba(255,255,255,0.01)
@@ -357,7 +357,19 @@ header .toggle img {
 .f-name input:focus{
 	border-bottom: 1px solid #17d1ac;
 	transition: all ease 0.5s;
-}.message font{
+}
+.sci {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.sci a img {
+  height: 50px;
+  width: 40px;
+  margin: 30px;
+}
+.message font{
 	font-size: 18px;
 	color:#4E4E4E;
 	font-family: calibri;
